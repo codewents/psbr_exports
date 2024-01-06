@@ -6,7 +6,7 @@ from flask_cors import CORS
 
 
 app = Flask(__name__)
-CORS(app, origins=['http://localhost:3000','http://psbrexports.com/','http://psbrexports.com', 'https://psbr-exports.onrender.com/','https://psbr-exports.onrender.com'], supports_credentials=True)
+CORS(app, origins=['http://localhost:3000','http://psbrexports.com/','https://psbrexports.com/','https://psbrexports.com','http://psbrexports.com', 'https://psbr-exports.onrender.com/','https://psbr-exports.onrender.com'], supports_credentials=True)
 
 
 @app.route('/send-email', methods=['POST'])
